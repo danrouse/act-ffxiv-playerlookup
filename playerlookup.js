@@ -241,4 +241,8 @@ addOverlayListener('PartyChanged', async (evt) => {
   }
 });
 
+setTimeout(async () => {
+  renderPlayerLookup(await lodestoneLookup('Yogurt Samaritan', 'Malboro'));
+}, 100);
+
 callOverlayHandler({ call: 'cactbotRequestState' });

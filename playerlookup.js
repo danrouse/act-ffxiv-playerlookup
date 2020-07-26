@@ -206,7 +206,7 @@ async function lodestoneLookup(name, world) {
 function renderPlayerLookup(player) {
   document.getElementById('playerlookup').innerHTML += `
     <li class="player">
-      <img class="job ${Util.jobToRole(player.job)}" src="../../resources/icon/jobs/${player.job.toLowerCase()}.png" alt="${player.job}" />
+      <img class="job ${Util.jobToRole(player.job)}" src="cactbot/icons/${player.job.toLowerCase()}.png" alt="${player.job}" />
       ${player.level !== null ? `<span class="level">${player.level}</span>` : ''}
       ${player.itemLevel !== null ? `<span class="item-level">${player.itemLevel}</span>` : ''}
       <span class="name">${player.name}</span>
